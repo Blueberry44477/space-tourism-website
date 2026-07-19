@@ -1,0 +1,22 @@
+<header class="header">
+  <a class="header__logo" routerLink="/" (click)="closeMenu()">
+    <img src="logo.svg" alt="Logo">
+  </a>
+
+  <button class="header__burger-btn" [class.open]="isMenuOpen()" (click)="toggleMenu()">
+    <img [src]="isMenuOpen() ? 'icon-close.svg' : 'icon-hamburger.svg'" alt="">
+  </button>
+
+  <nav class="header__nav" [class.open]="isMenuOpen()">
+    <ul class="header__list">
+    @for(item of navItems(); track item.route) {
+        <li class="header__item">
+          <a class="header__link" routerLink="{{item.route}}"
+             routerLinkActive="item__link--active">
+            {{item.label}}
+          </a>
+        </li>
+      }
+    </ul>
+  </nav>
+</header>
