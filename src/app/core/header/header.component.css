@@ -48,6 +48,7 @@
 
       .header__item {
         .header__link {
+          position: relative;
           min-width: 100%;
           display: block;
 
@@ -59,7 +60,6 @@
           font-family: "Outfit", sans-serif;
           font-size: 18px;
           letter-spacing: 2px;
-          /* font-weight: 400; */
           text-transform: uppercase;
         }
 
@@ -71,8 +71,23 @@
           font-weight: 700;
         }
       }
+
+      .header__link--active::after {
+        position: absolute;
+        display: block;
+        content: "";
+
+        top: 0;
+        right: 0;
+
+        width: 4px;
+        height: 100%;
+
+        background-color: white;
+      }
     }
   }
+
 
   .header__nav.open {
     position: absolute;
