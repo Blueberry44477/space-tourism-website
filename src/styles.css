@@ -1,11 +1,26 @@
 :root {
-  --background-image-mobile: url("/pages/home/background-home-mobile.jpg");
-  --background-image-tablet: url("/pages/home/background-home-tablet.jpg");
-  --background-image-desktop: url("/pages/home/background-home-desktop.jpg");
+  /* Colors */
+  --blue-900: #0B0D17;
+  --blue-300: #D0D6F9;
+  --white: #FFF;
 
   --site-padding-inline-mobile: 24px;
   --site-padding-inline-tablet: 40px;
   --site-padding-inline-desktop: 64px;
+}
+
+* {
+  color: white;
+}
+
+/* Resets */
+h1, h2, h3, h4, h5, h6, p, ul, ol, figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
 }
 
 button {
@@ -14,9 +29,96 @@ button {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   width: 100%;
   height: 100%;
 }
 
-/* You can add global styles to this file, and also import other style files */
+/* Typography */
+.text-preset-1 {
+  font-family: "Bellefair", sans-serif;
+  font-size: 80px;
+}
+
+.text-preset-2 {
+  font-family: "Bellefair", sans-serif;
+  font-size: 56px;
+}
+
+.text-preset-3 {
+  font-family: "Bellefair", sans-serif;
+  font-size: 24px;
+}
+
+.text-preset-4 {
+  font-family: "Bellefair", sans-serif;
+  font-size: 18px;
+}
+
+.text-preset-5 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+.text-preset-6 {
+  font-family: "Bellefair", sans-serif;
+  font-size: 16px;
+}
+
+.text-preset-7 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.text-preset-8 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.text-preset-9 {
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  line-height: 180%;
+}
+
+/* Utils */
+.container {
+  padding: 88px 24px 0 24px;
+  min-height: 100vh;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  /* Typography */
+  .text-preset-1 { font-size: 120px;}
+  .text-preset-2 { font-size: 80px; }
+  .text-preset-3 { font-size: 40px; }
+  .text-preset-4 { font-size: 24px; }
+  .text-preset-5 { font-size: 20px; }
+  .text-preset-9 { font-size: 16px; }
+
+  /*  */
+  .container {
+    padding-top: 110px;
+    padding-inline: var(--site-padding-inline-tablet);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+  .text-preset-1 { font-size: 144px; }
+  .text-preset-2 { font-size: 100px; }
+  .text-preset-3 { font-size: 56px; }
+  .text-preset-4 { font-size: 32px; }
+  .text-preset-5 { font-size: 28px; }
+  .text-preset-6 { font-size: 28px; }
+  .text-preset-8 { font-size: 16px; }
+  .text-preset-9 { font-size: 18px; }
+}
