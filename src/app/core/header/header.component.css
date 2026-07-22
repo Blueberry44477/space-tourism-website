@@ -1,5 +1,8 @@
 .header {
-  position: sticky;
+  position: fixed;
+  top: 0;
+
+  min-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -103,9 +106,16 @@
 }
 
 @media (min-width: 768px) {
-  .header{
+  .header {
+    padding-inline: var(--site-padding-inline-tablet);
+
     .header__burger-btn {
       display: none;
+    }
+
+    .header__logo {
+      width: 48px;
+      height: 48px;
     }
 
     .header__nav,
@@ -150,5 +160,11 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    padding-inline: var(--site-padding-inline-desktop);
   }
 }
