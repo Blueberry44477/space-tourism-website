@@ -1,0 +1,24 @@
+<div class="planet">
+  <div class="">
+    <img [src]="planet().image" alt="Planet Image" class="planet-description__img">
+  </div>
+
+  <div class="">
+    <h1 class="planet__title">{{planet().name}}</h1>
+    <p class="planet__description">{{planet().description}}</p>
+    <hr class="planet__separator">
+
+    <div class="planet__stats">
+      <!-- Div or Span? -->
+      <div class="">
+        <p class="planet__stats-label">Avg. distance</p>
+        <p class="planet__stats-value">{{planet().distance}}</p>
+      </div>
+
+      <div class="">
+        <p class="planet__stats-label">Est. travel time</p>
+        <p class="planet__stats-value">{{planet().travelTime}}</p>
+      </div>
+    </div>
+  </div>
+</div>

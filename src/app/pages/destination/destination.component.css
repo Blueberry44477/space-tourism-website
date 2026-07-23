@@ -1,0 +1,5 @@
+.destination {
+  display: flex; /* For gap */
+  justify-content: center;
+  background: url("/pages/destination/background-destination-mobile.jpg") center/cover no-repeat;
+}
