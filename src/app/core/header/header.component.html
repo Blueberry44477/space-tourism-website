@@ -1,5 +1,5 @@
 <header class="header">
-  <a class="header__logo" routerLink="/" (click)="closeMenu()">
+  <a class="header__logo" routerLink="/homepage" (click)="closeMenu()">
     <img src="logo.svg" alt="Logo">
   </a>
 
@@ -9,7 +9,7 @@
 
   <nav class="header__nav" [class.open]="isMenuOpen()">
     <ul class="header__list">
-    @for(item of navItems(); track item.route) {
+    @for (item of navItems(); track item.route) {
         <li class="header__item">
           <a class="header__link" routerLink="{{item.route}}"
              routerLinkActive="header__link--active">

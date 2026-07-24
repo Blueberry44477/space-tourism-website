@@ -1,5 +1,24 @@
 .destination {
-  display: flex; /* For gap */
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
   background: url("/pages/destination/background-destination-mobile.jpg") center/cover no-repeat;
+}
+
+.destination__content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.destination__title {
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.destination__title::before {
+  content: "01";
+  margin-right: 24px;
+  opacity: 25%;
 }

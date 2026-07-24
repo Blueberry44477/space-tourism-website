@@ -1,23 +1,32 @@
 <div class="planet">
-  <div class="">
-    <img [src]="planet().image" alt="Planet Image" class="planet-description__img">
+  <div class="planet__img-container">
+    <img class="planet__img" [src]="planet().image" alt="Planet Image">
   </div>
 
-  <div class="">
-    <h1 class="planet__title">{{planet().name}}</h1>
-    <p class="planet__description">{{planet().description}}</p>
+  <div class="planet__details">
+    <nav class="planet__tabs">
+      <ul class="planet__list">
+        @for (tab of tabs; track tab.name) {
+          <li class="planet__item">
+            <a class="planet__link text-preset-8" routerLink="{{tab.path}}">{{tab.name}}</a>
+          </li>
+        }
+      </ul>
+    </nav>
+
+    <h1 class="planet__title text-preset-2">{{planet().name}}</h1>
+    <p class="planet__description text-preset-9">{{planet().description}}</p>
     <hr class="planet__separator">
 
     <div class="planet__stats">
-      <!-- Div or Span? -->
-      <div class="">
-        <p class="planet__stats-label">Avg. distance</p>
-        <p class="planet__stats-value">{{planet().distance}}</p>
+      <div class="planet__stat-group">
+        <p class="planet__stat-label text-preset-7">Avg. distance</p>
+        <p class="planet__stat-value text-preset-6">{{planet().distance}}</p>
       </div>
 
-      <div class="">
-        <p class="planet__stats-label">Est. travel time</p>
-        <p class="planet__stats-value">{{planet().travelTime}}</p>
+      <div class="planet__stat-group">
+        <p class="planet__stat-label text-preset-7">Est. travel time</p>
+        <p class="planet__stat-value text-preset-6">{{planet().travelTime}}</p>
       </div>
     </div>
   </div>

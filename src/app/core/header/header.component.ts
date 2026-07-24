@@ -1,6 +1,6 @@
 import { Component, computed, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from "@angular/router";
-import { NAVIGATION_ITEMS } from '../config/navigation.config';
+import { NAVIGATION_ITEMS } from './config/navigation.config';
 
 @Component({
   selector: 'app-header',

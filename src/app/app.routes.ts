@@ -13,7 +13,8 @@ export const routes: Routes = [
   },
   {
     path: 'destination',
-    component: DestinationComponent,
+    loadComponent: () => import('./pages/destination/destination.component')
+      .then(m => m.DestinationComponent),
     title: 'Destination',
     children: [
       { path: '', redirectTo: 'moon', pathMatch: 'full' },

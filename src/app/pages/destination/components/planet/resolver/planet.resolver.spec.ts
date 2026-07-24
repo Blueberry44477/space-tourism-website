@@ -2,7 +2,7 @@ import { TestBed } from '@angular/core/testing';
 import { ResolveFn } from '@angular/router';
 
 import { planetResolver } from './planet.resolver';
-import { Planet } from '../../../interfaces/planet.interface';
+import { Planet } from '../interface/planet.interface';
 
 describe('planetResolver', () => {
   const executeResolver: ResolveFn<Planet> = (...resolverParameters) =>

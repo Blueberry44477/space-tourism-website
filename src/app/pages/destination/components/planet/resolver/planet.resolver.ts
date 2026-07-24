@@ -1,5 +1,5 @@
 import { ResolveFn } from '@angular/router';
-import { Planet } from '../../../interfaces/planet.interface';
+import { Planet } from '../interface/planet.interface';
 import { PlanetService } from '../service/planet.service';
 import { inject } from '@angular/core';
 
