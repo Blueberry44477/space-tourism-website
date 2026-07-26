@@ -8,7 +8,7 @@
       <ul class="planet__list">
         @for (tab of tabs; track tab.name) {
           <li class="planet__item">
-            <a class="planet__link text-preset-8" routerLink="{{tab.path}}">{{tab.name}}</a>
+            <a class="planet__link text-preset-8" routerLink="{{tab.path}}" routerLinkActive="planet__link--active">{{tab.name}}</a>
           </li>
         }
       </ul>

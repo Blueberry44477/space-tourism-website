@@ -1,10 +1,10 @@
 import { Component, input } from '@angular/core';
 import { Planet } from './interface/planet.interface';
-import { RouterLink } from "@angular/router";
+import { RouterLink, RouterLinkActive } from "@angular/router";
 
 @Component({
   selector: 'app-planet.component',
-  imports: [RouterLink],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './planet.component.html',
   styleUrl: './planet.component.css',
 })
