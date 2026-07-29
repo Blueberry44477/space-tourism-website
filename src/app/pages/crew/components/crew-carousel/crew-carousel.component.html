@@ -1,0 +1,25 @@
+<div class="carousel" (wheel)="onWheel($event)">
+  <div class="carousel__crew-details">
+    <div class="carousel__member-info">
+      <div class="carousel__primary-info">
+        <h3 class="carousel__member-role text-preset-4">{{ currentMember().role }}</h3>
+        <h1 class="carousel__member-name text-preset-3">{{ currentMember().name }}</h1>
+      </div>
+      <p class="carousel__member-bio text-preset-9">{{ currentMember().bio }}</p>
+    </div>
+
+    <div class="carousel__dots-navigation">
+      @for (item of crew(); track $index) {
+        <button class="carousel__dot"
+          [class.active]="$index === currentMemberIndex()"
+          (click)="selectCrewMember($index)">
+        </button>
+      }
+    </div>
+  </div>
+
+  <div class="carousel__member-image-container">
+    <img class="carousel__member-image" [src]="currentMember().image"
+         [alt]="currentMember().name"/>
+  </div>
+</div>

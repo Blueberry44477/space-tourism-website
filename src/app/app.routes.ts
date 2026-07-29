@@ -24,5 +24,11 @@ export const routes: Routes = [
         resolve: { planet: planetResolver }
       }
     ]
+  },
+  {
+    path: 'crew',
+    loadComponent: () => import('./pages/crew/crew.component')
+      .then(m => m.CrewComponent),
+    // title: 'Crew'
   }
 ];

@@ -1,0 +1,26 @@
+.crew {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url("/pages/crew/background-crew-mobile.jpg") center/cover no-repeat;
+}
+
+.crew__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-top: 24px;
+}
+
+.crew__title {
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.crew__title::before {
+  content: "03";
+  margin-right: 24px;
+  opacity: 25%;
+}
