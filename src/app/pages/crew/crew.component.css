@@ -24,3 +24,20 @@
   margin-right: 24px;
   opacity: 25%;
 }
+
+@media (min-width: 768px) {
+  .crew {
+    background: url("/pages/crew/background-crew-tablet.jpg") center/cover no-repeat;
+  }
+
+  .crew__title {
+    font-size: 20px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1440px) {
+  .crew {
+    background: url("/pages/crew/background-crew-desktop.jpg") center/cover no-repeat;
+  }
+}

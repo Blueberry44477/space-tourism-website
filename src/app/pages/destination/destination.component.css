@@ -31,14 +31,11 @@
 
   .destination__title {
     font-size: 20px;
+    text-align: left;
   }
 
   .destination__content {
     padding-top: 40px;
-  }
-
-  .destination__title {
-    text-align: left;
   }
 }
 
