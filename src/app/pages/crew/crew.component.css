@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url("/pages/crew/background-crew-mobile.jpg") center/cover no-repeat;
+  background: url("../../../../public/pages/crew/background-crew-mobile.jpg") center/cover no-repeat;
 }
 
 .crew__content {
@@ -27,7 +27,7 @@
 
 @media (min-width: 768px) {
   .crew {
-    background: url("/pages/crew/background-crew-tablet.jpg") center/cover no-repeat;
+    background: url("../../../../public/pages/crew/background-crew-tablet.jpg") center/cover no-repeat;
   }
 
   .crew__title {
@@ -38,6 +38,6 @@
 
 @media (min-width: 1440px) {
   .crew {
-    background: url("/pages/crew/background-crew-desktop.jpg") center/cover no-repeat;
+    background: url("../../../../public/pages/crew/background-crew-desktop.jpg") center/cover no-repeat;
   }
 }

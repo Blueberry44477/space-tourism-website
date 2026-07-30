@@ -1,7 +1,7 @@
 .hero {
   display: flex; /* For gap */
   justify-content: center;
-  background: url("/pages/home/background-home-mobile.jpg") center/cover no-repeat;
+  background: url("../../../../public/pages/home/background-home-mobile.jpg") center/cover no-repeat;
 }
 
 .hero__content {
@@ -60,7 +60,7 @@
 
 @media (min-width: 768px) {
   .hero {
-    background-image: url("/pages/home/background-home-tablet.jpg");
+    background-image: url("../../../../public/pages/home/background-home-tablet.jpg");
   }
 
   .hero__title {
@@ -79,7 +79,7 @@
 
 @media (min-width: 1440px) {
   .hero {
-    background-image: url("/pages/home/background-home-desktop.jpg");
+    background-image: url("../../../../public/pages/home/background-home-desktop.jpg");
   }
 
   .hero__content {

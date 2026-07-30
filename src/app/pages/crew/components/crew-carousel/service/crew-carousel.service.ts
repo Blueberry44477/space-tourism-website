@@ -12,7 +12,7 @@ export class CrewCarouselService {
       bio: `Douglas Gerald Hurley is an American engineer, former Marine Corps
         pilot and former NASA astronaut. He launched into space for the third
         time as commander of Crew Dragon Demo-2.`,
-      image: '/pages/crew/image-douglas-hurley.webp'
+      image: 'pages/crew/image-douglas-hurley.webp'
     },
     {
       role: 'mission specialist',
@@ -21,7 +21,7 @@ export class CrewCarouselService {
         the company behind the Linux-based Ubuntu operating system.
         Shuttleworth became the first South African to travel to space as a
         space tourist.`,
-      image: '/pages/crew/image-mark-shuttleworth.webp'
+      image: 'pages/crew/image-mark-shuttleworth.webp'
     },
     {
       role: 'pilot',
@@ -30,7 +30,7 @@ export class CrewCarouselService {
         the International Space Station. Glover is a commander in the U.S. Navy
         where he pilots an F/A-18.He was a crew member of Expedition 64, and
         served as a station systems flight engineer.`,
-      image: '/pages/crew/image-victor-glover.webp'
+      image: 'pages/crew/image-victor-glover.webp'
     },
     {
       role: 'flight engineer',
@@ -39,7 +39,7 @@ export class CrewCarouselService {
         Prodea Systems. Ansari was the fourth self-funded space tourist, the
         first self-funded woman to fly to the ISS, and the first Iranian in
         space.`,
-      image: '/pages/crew/image-anousheh-ansari.webp'
+      image: 'pages/crew/image-anousheh-ansari.webp'
     }
   ]);
 
